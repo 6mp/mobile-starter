@@ -1,0 +1,50 @@
+{
+	"expo": {
+		"name": "My RevenueCat App",
+		"slug": "myrevapp",
+		"version": "1.0.0",
+		"scheme": "myrevapp",
+		"orientation": "portrait",
+		"icon": "./assets/icon.png",
+		"userInterfaceStyle": "automatic",
+		"web": {
+			"bundler": "metro",
+			"output": "static",
+			"favicon": "./assets/favicon.png"
+		},
+		"plugins": [
+			[
+				"expo-splash-screen",
+				{
+					"backgroundColor": "#ffffff",
+					"image": "./assets/logo-b.png",
+					"dark": {
+						"image": "./assets/logo-w.png",
+						"backgroundColor": "#000000"
+					}
+				}
+			],
+			"expo-apple-authentication",
+			"expo-font",
+			"expo-secure-store",
+			"expo-web-browser"
+		],
+		"experiments": {
+			"typedRoutes": true,
+			"reactCompiler": true
+		},
+		"ios": {
+			"bundleIdentifier": "com.example.myrevapp",
+			"infoPlist": {
+				"ITSAppUsesNonExemptEncryption": false
+			}
+		},
+		"android": {
+			"adaptiveIcon": {
+				"foregroundImage": "./assets/adaptive-icon.png",
+				"backgroundColor": "#ffffff"
+			},
+			"package": "com.example.myrevapp"
+		}
+	}
+}
